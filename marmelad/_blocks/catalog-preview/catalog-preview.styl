@@ -1,0 +1,141 @@
+.catalog-preview
+  padding-top: 90px
+  padding-bottom: 90px
+
+  &__head
+    max-width: 700px
+    width: 100%
+    text-align: center
+    margin: 0 auto 45px
+
+  &__title
+    font-size: 35px
+    color: #000
+    font-weight: 400
+    line-height: 1.3
+    margin-bottom: 20px
+
+  &__desc
+    font-size: 22px
+    color: #000
+    font-weight: 400
+    line-height: 1.3
+
+  &__container
+    padding-bottom: 60px
+
+    .swiper-pagination
+      text-align: left
+
+    .swiper-button-prev, .swiper-button-next
+      transition: opacity 0.3s, ease 0.3s
+
+      @media (max-width: 405px)
+        display: none
+
+      &.swiper-button-disabled
+        opacity: 0
+
+    .swiper-button-prev
+      width: 30px
+      left: 40px
+      margin-top: -60px
+
+      &:after
+        content: ''
+        transform: rotate(-180deg)
+        width: 30px
+        height: 45px
+        background-image: url("data:image/svg+xml,%3Csvg width='29' height='45' viewBox='0 0 29 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 8.25154C-0.5 6.36653 -0.5 3.29877 1.5 1.41376C3.5 -0.471254 6.7549 -0.471253 8.7549 1.41376L27.5 19.0811C29.5 20.9661 29.5 24.0339 27.5 25.9189L8.7549 43.5862C6.7549 45.4713 3.5 45.4713 1.5 43.5862C-0.500002 41.7012 -0.500002 38.6335 1.5 36.7485L16.6176 22.5L1.5 8.25154Z' fill='white'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+
+    .swiper-button-next
+      width: 30px
+      right: 40px
+      margin-top: -60px
+
+      &:after
+        content: ''
+        width: 30px
+        height: 45px
+        background-image: url("data:image/svg+xml,%3Csvg width='29' height='45' viewBox='0 0 29 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 8.25154C-0.5 6.36653 -0.5 3.29877 1.5 1.41376C3.5 -0.471254 6.7549 -0.471253 8.7549 1.41376L27.5 19.0811C29.5 20.9661 29.5 24.0339 27.5 25.9189L8.7549 43.5862C6.7549 45.4713 3.5 45.4713 1.5 43.5862C-0.500002 41.7012 -0.500002 38.6335 1.5 36.7485L16.6176 22.5L1.5 8.25154Z' fill='white'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+
+  &__item
+    width: 370px
+    display: flex
+
+    @media (max-width: 405px)
+      width: 320px
+
+    @media (max-width: 359px)
+      width: 280px
+
+    &:last-child
+      @media (max-width: 405px)
+        margin-right: 20px
+
+  &__body
+    text-decoration: none
+    background-color: #fff6
+    border-radius: 30px
+    display: flex
+    flex-direction: column
+    padding: 10px
+    border: 1px solid #fff
+    width: 100%
+
+  &__img
+    height: 270px
+    position: relative
+    border-radius: 20px 20px 0 0
+    overflow: hidden
+
+    @media (max-width: 405px)
+      height: 240px
+
+    @media (max-width: 359px)
+      height: 200px
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFFFFF 100%), url('hYK5KGlx5jM.jpg')
+
+    img
+      vertical-align: top
+
+  &__name
+    font-size: 18px
+    color: #000
+    font-weight: 400
+    line-height: 1.3
+    border-radius: 0 0 20px 20px
+    background-color: #fff
+    position: relative
+    display: flex
+    align-items: center
+    padding-right: 15px
+    padding-bottom: 15px
+    flex: 1 1 auto
+
+    @media (max-width: 405px)
+      font-size: 16px
+
+    &:before
+      content: ''
+      flex: 0 0 39px
+      width: 39px
+      max-width: 39px
+      height: 40px
+      margin-right: 15px
+      background-color: #72C30B
+      border-radius: 0 50% 50% 0
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM15.5303 6.53033C15.8232 6.23744 15.8232 5.76256 15.5303 5.46967L10.7574 0.6967C10.4645 0.403807 9.98959 0.403807 9.6967 0.6967C9.40381 0.989593 9.40381 1.46447 9.6967 1.75736L13.9393 6L9.6967 10.2426C9.40381 10.5355 9.40381 11.0104 9.6967 11.3033C9.98959 11.5962 10.4645 11.5962 10.7574 11.3033L15.5303 6.53033ZM1 6.75L15 6.75L15 5.25L1 5.25L1 6.75Z' fill='white'/%3E%3C/svg%3E%0A")
+      background-position: 50% 50%
+      background-size: 16px 12px
+      background-repeat: no-repeat
