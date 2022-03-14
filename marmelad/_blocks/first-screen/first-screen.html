@@ -1,0 +1,42 @@
+<div block="first-screen">
+  <div elem="section" style="background-image: url('img/first-screen-pic.jpg');">
+    <div class="bg-left-pic"></div>
+    <div class="bg-right-pic"></div>
+    <div elem="inner" class="contain">
+      {% include "site-info.html" %}
+      <div elem="content">
+        <div elem="title">
+          Получите каталог из ТОП-10
+          популярных моделей бань с фото,
+          комплектациями и <span>докризисными 
+          ценами 2021 года</span>
+        </div>
+        <div elem="desc">
+          За 5 дней изготовим мобильную баню из ели
+          или сосны. В рассрочку от 7 800 руб. / мес.
+        </div>
+        <ul elem="list">
+          <li>Дадим гарантию <br> 1 год.</li>
+          <li>Доставляем по <br> всей России.</li>
+          <li>Работаем без <br> предоплаты</li>
+        </ul>
+        <form elem="form">
+          <div elem="form-title">
+            Скачайте подборку на WhatsApp в 1 клик
+          </div>
+          <div elem="form-section">
+            <div elem="fields">
+              <div elem="field">
+                <input type="tel" placeholder="Введите ваш телефон">
+              </div>
+            </div>
+            <button elem="button-submit" class="button-general button-general--icon" type="submit">
+              {{ _icon('doc-icon', { tag: 'i' }) }}
+              <span>Скачать подборку, PDF</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!-- first-screen -->
