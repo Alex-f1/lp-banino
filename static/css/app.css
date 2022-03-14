@@ -401,9 +401,6 @@ strong {
 .catalog-preview__container {
   padding-bottom: 60px;
 }
-.catalog-preview__container .swiper-pagination {
-  text-align: left;
-}
 .catalog-preview__container .swiper-button-prev,
 .catalog-preview__container .swiper-button-next {
   -webkit-transition: opacity 0.3s, ease 0.3s;
@@ -845,6 +842,11 @@ strong {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+@media (min-width: 406px) {
+  .catalog-preview__container .swiper-pagination {
+    text-align: left;
   }
 }
 @media (min-width: 768px) {
