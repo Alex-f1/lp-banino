@@ -6,6 +6,9 @@ html
   min-height: 100%
   min-height: 100vh
 
+body
+  background-color: #F3EEE7
+
 .app
   display: flex
   flex-direction: column
@@ -43,6 +46,7 @@ strong
   color: #fff
   font-weight: 700
   line-height: 1.1
+  text-align: center
   text-decoration: none
   background-color: transparent
   padding: 23px 30px
@@ -63,10 +67,16 @@ strong
     .svg-icon
       margin-right: 20px
 
+  &--outline
+    color: #000
+    background-image: none
+    background-color: rgba(255, 255, 255, 0.2)
+    border: 1px solid #C9C9C9
+    box-shadow: none
+
 .blocks-section
   padding-top: 80px
   padding-bottom: 80px
-  background-color: #F3EEE7
 
   @media (max-width: 1279px)
     padding-top: 30px
