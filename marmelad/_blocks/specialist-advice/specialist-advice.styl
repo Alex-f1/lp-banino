@@ -1,0 +1,448 @@
+.specialist-advice
+  padding-top: 40px
+  padding-bottom: 20px
+  overflow: hidden
+
+  @media (max-width: 767px)
+    padding-top: 20px
+
+  &__inner
+    padding-right: 20px
+
+  &__head
+    max-width: 1070px
+    width: 100%
+
+    @media (max-width: 1023px)
+      text-align: center
+
+    @media (max-width: 639px)
+      text-align: left
+
+  &__title
+    font-size: 35px
+    color: #000
+    font-weight: 400
+    line-height: 1.2
+
+    @media (max-width: 767px)
+      font-size: 22px
+
+  &__cols
+    display: flex
+
+    @media (max-width: 1023px)
+      flex-direction: column
+      align-items: center
+
+  &__col
+    @media (max-width: 1023px)
+      width: 100%
+
+    &--step
+      max-width: 500px
+      width: 100%
+      position: relative
+
+      @media (max-width: 1023px)
+        margin-bottom: 30px
+
+      @media (max-width: 479px)
+        margin-bottom: 20px
+
+      &:after
+        content: ''
+        position: absolute
+        right: -155px
+        bottom: 30px
+        width: 111px
+        height: 45px
+        background-image: url("data:image/svg+xml,%3Csvg width='111' height='45' viewBox='0 0 111 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 8.25154C-0.5 6.36653 -0.5 3.29877 1.5 1.41376C3.5 -0.471254 6.7549 -0.471253 8.7549 1.41376L27.5 19.0811C29.5 20.9661 29.5 24.0339 27.5 25.9189L8.7549 43.5862C6.7549 45.4713 3.5 45.4713 1.5 43.5862C-0.500002 41.7012 -0.500002 38.6335 1.5 36.7485L16.6176 22.5L1.5 8.25154Z' fill='white'/%3E%3Cpath d='M42.5 8.25154C40.5 6.36653 40.5 3.29877 42.5 1.41376C44.5 -0.471254 47.7549 -0.471253 49.7549 1.41376L68.5 19.0811C70.5 20.9661 70.5 24.0339 68.5 25.9189L49.7549 43.5862C47.7549 45.4713 44.5 45.4713 42.5 43.5862C40.5 41.7012 40.5 38.6335 42.5 36.7485L57.6176 22.5L42.5 8.25154Z' fill='white'/%3E%3Cpath d='M83.5 8.25154C81.5 6.36653 81.5 3.29877 83.5 1.41376C85.5 -0.471254 88.7549 -0.471253 90.7549 1.41376L109.5 19.0811C111.5 20.9661 111.5 24.0339 109.5 25.9189L90.7549 43.5862C88.7549 45.4713 85.5 45.4713 83.5 43.5862C81.5 41.7012 81.5 38.6335 83.5 36.7485L98.6176 22.5L83.5 8.25154Z' fill='white'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-position: 0 0
+
+        @media (max-width: 1279px)
+          display: none
+
+    &--form
+      margin-left: 100px
+
+      @media (max-width: 1279px)
+        margin-left: 25px
+
+      @media (max-width: 1023px)
+        margin-left: 0
+
+  &__desc
+    font-size: 22px
+    color: #000
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 20px
+    margin-top: 25px
+
+    @media (max-width: 1023px)
+      text-align: center
+
+    @media (max-width: 767px)
+      font-size: 18px
+
+    @media (max-width: 639px)
+      text-align: left
+
+  &__avatar
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+  &__avatar-icon
+    flex: 0 0 115px
+    width: 115px
+    max-width: 115px
+    margin-right: 5px
+
+  &__avatar-title
+    font-size: 25px
+    color: #000
+    font-weight: 700
+    line-height: 1.3
+
+    @media (max-width: 767px)
+      font-size: 18px
+
+  &__steps
+    max-width: 500px
+
+  &__step
+    width: 100%
+    margin-bottom: 30px
+
+    @media (max-width: 479px)
+      margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+    &:nth-child(1)
+      & ^[0]
+        &__step-body
+          color: #000
+          background-color: #FFF
+
+    &:nth-child(2)
+      & ^[0]
+        &__step-body
+          background-color: #FFA723
+
+    &:nth-child(3)
+      & ^[0]
+        &__step-body
+          background-color: #1F1F1F
+
+  &__step-body
+    color: #fff
+    display: flex
+    align-items: center
+    padding: 25px 20px 30px 35px
+    border-radius: 20px
+    width: 100%
+
+    @media (max-width: 479px)
+      padding: 15px 15px 15px 20px
+
+  &__step-icon
+    flex: 0 0 60px
+    width: 60px
+    max-width: 60px
+    text-align: center
+    margin-right: 25px
+
+    @media (max-width: 479px)
+      flex: 0 0 45px
+      width: 45px
+      max-width: 45px
+
+    img
+      vertical-align: top
+
+  &__step-text
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.4
+    max-width: 275px
+
+  &__step-number
+    font-size: 14px
+    color: #FFF
+    font-weight: 700
+    line-height: 1.1
+    text-align: center
+    flex: 0 0 40px
+    width: 40px
+    max-width: 40px
+    height: 40px
+    background-color: #72C30B
+    margin-left: auto
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+    @media (max-width: 639px)
+      display: none
+
+  &__main-img
+    width: 100%
+    height: 460px
+    overflow: hidden
+    border-radius: 30px 0px 0px 30px
+
+    @media (max-width: 1023px)
+      display: none
+
+    img
+      width: 100%
+      height: 100%
+      vertical-align: top
+      object-fit: cover
+      object-position: 50% 50%
+
+.specialist-form
+  max-width: 470px
+  width: 100%
+  position: relative
+  z-index: 2
+  margin-top: -395px
+  transform: translateX(100px)
+
+  @media (max-width: 1279px)
+    transform: translateX(25px)
+
+  @media (max-width: 1024px)
+    transform: translateX(0)
+
+  @media (max-width: 1023px)
+    max-width: 500px
+    margin-top: 0
+    margin-right: auto
+    margin-left: auto
+
+  &__section
+    color: #000
+    border: 10px solid #fff
+    border-radius: 30px
+    overflow: hidden
+    background-color: #fff
+    padding: 25px 20px 30px 20px
+    background-image: url('../img/specialist-form-bg.png')
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: cover
+    text-align: center
+    width: 100%
+
+  &__title
+    font-size: 25px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 15px
+
+    @media (max-width: 479px)
+      font-size: 20px
+
+  &__desc
+    font-size: 22px
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 15px
+
+    @media (max-width: 479px)
+      font-size: 18px
+
+  &__inner
+    max-width: 370px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+  &__field
+    margin-bottom: 20px
+
+    input
+      font-size: 18px
+      color: #868686
+      font-weight: 400
+      line-height: 1.1
+      height: 70px
+      border: 1px solid #CCCCCC
+      border-radius: 100px
+      padding: 20px 40px
+      width: 100%
+
+      @media (max-width: 479px)
+        padding-right: 20px
+        padding-left: 20px
+
+    ::placeholder
+      font-size: 18px
+      color: #868686
+      font-weight: 400
+      line-height: 1.1
+
+  &__name
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 20px
+
+    @media (max-width: 479px)
+      font-size: 16px
+      margin-bottom: 15px
+
+  &__button
+    width: 100%
+    padding-top: 15px
+    padding-bottom: 15px
+    margin-bottom: 20px
+
+    @media (max-width: 767px)
+      padding-top: 18px
+      padding-bottom: 18px
+
+    @media (max-width: 479px)
+      padding-right: 15px
+      padding-left: 15px
+
+    @media (max-width: 359px)
+      font-size: 14px
+      padding-top: 20px
+      padding-bottom: 20px
+
+  &__privacy-policy
+    display: flex
+    align-items: center
+    text-align: left
+
+    input
+      display: none
+
+      &:checked ~ .checkbox-name:before
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.43192 8.53864C4.88786 9.08272 4.00508 9.08272 3.46128 8.53864L0.408044 5.48534C-0.136015 4.94153 -0.136015 4.05873 0.408044 3.51492C0.951839 2.97085 1.83462 2.97085 2.37868 3.51492L4.19781 5.33383C4.33513 5.4709 4.55806 5.4709 4.69565 5.33383L9.62132 0.408053C10.1651 -0.136018 11.0479 -0.136018 11.592 0.408053C11.8532 0.669322 12 1.02381 12 1.39326C12 1.76271 11.8532 2.1172 11.592 2.37847L5.43192 8.53864Z' fill='black'/%3E%3C/svg%3E%0A")
+
+    .checkbox-name
+      font-size: 14px
+      color: #7D7D7D
+      font-weight: 400
+      line-height: 1.2
+      display: flex
+
+      &:before
+        content: ''
+        flex: 0 0 25px
+        width: 25px
+        max-width: 25px
+        height: 25px
+        background-color: #FFF
+        background-image: none
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 12px 9px
+        border: 1px solid #CCC
+        border-radius: 50%
+        overflow: hidden
+        margin-right: 20px
+        transition: background-image 0.3s, ease 0.3s
+
+        @media (max-width: 479px)
+          margin-right: 10px
+
+    span
+      a
+        color: #7D7D7D
+        font-weight: 700
+        text-decoration: none
+
+        &:hover
+          text-decoration: underline
+
+.socials-links
+  max-width: 310px
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  margin-top: 25px
+
+  &__title
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.3
+    margin-bottom: 15px
+
+    @media (max-width: 479px)
+      font-size: 16px
+      line-height: 1.4
+
+  &__items
+    display: flex
+    justify-content: center
+
+    @media (max-width: 359px)
+      flex-wrap: wrap
+
+  &__item
+    flex: 0 0 90px
+    width: 90px
+    max-width: 90px
+    margin-right: 5px
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    font-size: 14px
+    color: #000
+    font-weight: 400
+    line-height: 1.1
+    text-align: center
+    text-decoration: none
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 18px 15px
+
+    &:hover
+      &:after
+        opacity: 1
+        visibility: visible
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: -10px
+      width: 110px
+      height: 110px
+      background-color: #FFF
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+      border-radius: 20px
+      z-index: 1
+      opacity: 0
+      visibility: hidden
+      transition: opacity 0.3s, ease 0.3s
+
+      @media (max-width: 479px)
+        left: 0
+        width: 100%
+        height: 100%
+
+  &__icon, &__name
+    position: relative
+    z-index: 2
+
+  &__icon
+    width: 44px
+    height: 44px
+    margin-bottom: 10px

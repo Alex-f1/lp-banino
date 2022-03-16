@@ -205,4 +205,10 @@ $(function () {
     catalogProjectsPreviewOffsetTop = $('.catalog-projects__preview').offset().top - 25;
     initCatalogProjectsSliderInMobile();
   });
+  $(window).on('load resize', function () {
+    var specialistAdviceInner = $('.specialist-advice__inner');
+    var containOffSetLeft = $('.contain').offset().left + 20;
+    specialistAdviceInner.css('margin-left', containOffSetLeft);
+  });
+  $('.phone-mask').mask('+7 (000) 000-00-00');
 });
