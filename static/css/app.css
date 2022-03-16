@@ -386,6 +386,126 @@ strong {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ff9f2e;
 }
+.advantages {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.advantages__head {
+  color: #000;
+  max-width: 1050px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.advantages__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.advantages__desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+  max-width: 580px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages__item {
+  width: 34.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.6);
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages__content {
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 30px 20px 190px 20px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages__content:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55.31%, #fff), color-stop(90.88%, rgba(255,255,255,0)));
+  background-image: linear-gradient(180deg, #fff 55.31%, rgba(255,255,255,0) 90.88%);
+  z-index: 4;
+}
+.advantages__icon {
+  width: 50px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+.advantages__icon img {
+  vertical-align: top;
+}
+.advantages__name {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 5;
+}
+.advantages__text {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  z-index: 5;
+}
+.advantages__img {
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+  margin-top: -225px;
+  position: relative;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages__img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.building-technology {
+  padding-bottom: 45px;
+}
 .building-technology__head {
   max-width: 610px;
   width: 100%;
@@ -676,8 +796,8 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255,255,255,0)), to(#fff)), url("hYK5KGlx5jM.jpg");
-  background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #fff 100%), url("hYK5KGlx5jM.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255,255,255,0)), to(#fff));
+  background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, #fff 100%);
 }
 .catalog-preview__img img {
   vertical-align: top;
@@ -1417,6 +1537,15 @@ strong {
   }
 }
 @media (min-width: 960px) {
+  .advantages__container .swiper-pagination {
+    display: none !important;
+  }
+  .advantages__items {
+    margin-left: -30px;
+  }
+  .advantages__item {
+    padding-left: 30px;
+  }
   .building-technology__container .swiper-wrapper {
     display: block;
   }
@@ -1494,6 +1623,9 @@ strong {
   }
 }
 @media (max-width: 959px) {
+  .advantages__container .swiper-wrapper {
+    padding-bottom: 65px;
+  }
   .building-technology__head {
     text-align: center;
     margin-left: auto;
@@ -1547,6 +1679,30 @@ strong {
 @media (max-width: 767px) {
   .button-general {
     font-size: 16px;
+  }
+  .advantages {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .advantages__head {
+    margin-bottom: 25px;
+  }
+  .advantages__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .advantages__desc {
+    font-size: 18px;
+  }
+  .advantages__name {
+    font-size: 18px;
+  }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .building-technology {
+    padding-bottom: 25px;
   }
   .building-technology__title {
     font-size: 22px;
@@ -1756,6 +1912,9 @@ strong {
   }
 }
 @media (max-width: 359px) {
+  .advantages__content:after {
+    top: 50px;
+  }
   .catalog-preview__item {
     width: 280px;
   }
