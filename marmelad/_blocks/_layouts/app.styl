@@ -55,6 +55,7 @@ strong
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.3), inset 0px -4px 10px rgba(150, 255, 63, 0.5)
   border: none
   cursor: pointer
+  transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s, ease 0.3s
 
   @media (max-width: 767px)
     font-size: 16px
@@ -73,6 +74,11 @@ strong
     background-color: rgba(255, 255, 255, 0.2)
     border: 1px solid #C9C9C9
     box-shadow: none
+
+    &._is-active
+      color: #fff
+      background-image: linear-gradient(180deg, #FFC123 0%, #FFA723 100%)
+      box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.3), inset 0px -4px 10px #FFD337
 
 .blocks-section
   padding-top: 80px
