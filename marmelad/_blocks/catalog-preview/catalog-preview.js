@@ -2,7 +2,6 @@ function initCatalogPreviewSlider() {
   const swiper = new Swiper(".js-catalog-preview-slider", {
     slidesPerView: 'auto',
     spaceBetween: 30,
-    freeMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

@@ -380,6 +380,12 @@ strong {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.blocks-section--type2 {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background: url("../img/section-block-bg.png") 0 40% no-repeat, url("../img/section-block-bg2.png") 100% 100% no-repeat, url("../img/section-block-bg3.png") 100% 50% no-repeat, url("../img/section-block-bg4.png") 0 100% no-repeat, #fff;
+  background-size: auto;
+}
 .swiper-pagination {
   bottom: 0 !important;
 }
@@ -1670,6 +1676,141 @@ strong {
   background-position: 0 0;
   margin-left: 25px;
 }
+.reviews-clients__inner {
+  max-width: 1305px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.reviews-clients__head {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 45px;
+}
+.reviews-clients__title {
+  font-size: 35px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 55px;
+}
+.reviews-clients__container {
+  max-width: 1230px;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+.reviews-clients__container .swiper-button-prev {
+  width: 17px;
+  left: 0;
+}
+.reviews-clients__container .swiper-button-prev:after {
+  content: '';
+  width: 17px;
+  height: 27px;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='%23FFA723'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews-clients__container .swiper-button-next {
+  width: 17px;
+  right: 0;
+}
+.reviews-clients__container .swiper-button-next:after {
+  content: '';
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  width: 17px;
+  height: 27px;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='%23FFA723'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+.reviews-clients__item {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews-clients__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.reviews-clients__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.reviews-clients__avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 108px;
+          flex: 0 0 108px;
+  width: 108px;
+  max-width: 108px;
+  height: 108px;
+  border: 8px solid #72c30b;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+.reviews-clients__avatar img {
+  vertical-align: top;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.reviews-clients__name {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.reviews-clients__content {
+  color: #000;
+  padding: 30px 25px 30px 30px;
+  background-color: #f3eee7;
+  border-radius: 30px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.reviews-clients__content:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 14px 10px;
+  border-color: transparent transparent #f3eee7 transparent;
+}
+.reviews-clients__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.reviews-clients__text strong {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 15px;
+}
 .site-info {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2302,6 +2443,14 @@ strong {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .blocks-section--type2 {
+    background: none;
+    background-color: #fff;
+  }
+  .blocks-section--type2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
   .catalog-projects__toggle-button {
     margin-right: 10px;
     padding-right: 10px;
@@ -2646,6 +2795,15 @@ strong {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .reviews-clients__container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .reviews-clients__container .swiper-button-prev,
+  .reviews-clients__container .swiper-button-next {
+    display: none;
+  }
   .site-info__section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2736,6 +2894,13 @@ strong {
   .project-preview__video {
     height: 320px;
   }
+  .reviews-clients__head {
+    margin-bottom: 20px;
+  }
+  .reviews-clients__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
   .specialist-advice__head {
     text-align: left;
   }
@@ -2801,6 +2966,23 @@ strong {
   }
   .project-preview__button-next span:after {
     margin-left: 15px;
+  }
+  .reviews-clients__avatar {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+  }
+  .reviews-clients__name {
+    font-size: 16px;
+  }
+  .reviews-clients__text {
+    font-size: 16px;
+  }
+  .reviews-clients__text strong {
+    font-size: 18px;
   }
   .specialist-advice__col--step {
     margin-bottom: 20px;

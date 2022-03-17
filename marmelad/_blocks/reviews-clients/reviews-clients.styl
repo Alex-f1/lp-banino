@@ -1,0 +1,148 @@
+.reviews-clients
+  &__inner
+    max-width: 1265px + 20px + 20px
+    margin-left: auto
+    margin-right: auto
+    padding-right: 20px
+    padding-left: 20px
+
+  &__head
+    max-width: 480px
+    width: 100%
+    text-align: center
+    margin: 0 auto 45px
+
+    @media (max-width: 639px)
+      margin-bottom: 20px
+
+  &__title
+    font-size: 35px
+    color: #000
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 55px
+
+    @media (max-width: 639px)
+      font-size: 22px
+      margin-bottom: 15px
+
+  &__container
+    max-width: 1170px + 30px + 30px
+    width: 100%
+    padding-right: 30px
+    padding-left: 30px
+    padding-bottom: 50px
+
+    @media (max-width: 767px)
+      max-width: 100%
+      padding-right: 0
+      padding-left: 0
+
+    .swiper-button-prev, .swiper-button-next
+      @media (max-width: 767px)
+        display: none
+
+    .swiper-button-prev
+      width: 17px
+      left: 0
+
+      &:after
+        content: ''
+        width: 17px
+        height: 27px
+        background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='%23FFA723'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-size: cover
+
+    .swiper-button-next
+      width: 17px
+      right: 0
+
+      &:after
+        content: ''
+        transform: rotate(-180deg)
+        width: 17px
+        height: 27px
+        background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='%23FFA723'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+
+  &__item
+    height: auto
+    display: flex
+
+  &__body
+    display: flex
+    flex-direction: column
+
+  &__info
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+  &__avatar
+    flex: 0 0 108px
+    width: 108px
+    max-width: 108px
+    height: 108px
+    border: 8px solid #72C30B
+    border-radius: 50%
+    position: relative
+    overflow: hidden
+    margin-right: 20px
+
+    @media (max-width: 479px)
+      flex: 0 0 100px
+      width: 100px
+      max-width: 100px
+      height: 100px
+
+    img
+      vertical-align: top
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+  &__name
+    font-size: 18px
+    color: #000
+    font-weight: 400
+    line-height: 1.2
+
+    @media (max-width: 479px)
+      font-size: 16px
+
+  &__content
+    color: #000
+    padding: 30px 25px 30px 30px
+    background-color: #F3EEE7
+    border-radius: 30px
+    position: relative
+    flex: 1 1 auto
+
+    &:after
+      content: ''
+      position: absolute
+      top: -10px
+      left: 40px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 10px 14px 10px
+      border-color: transparent transparent #f3eee7 transparent
+
+  &__text
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.2
+
+    @media (max-width: 479px)
+      font-size: 16px
+
+    strong
+      font-size: 22px
+      display: block
+      margin-bottom: 15px
+
+      @media (max-width: 479px)
+        font-size: 18px
