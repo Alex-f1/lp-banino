@@ -1,0 +1,263 @@
+.project-details
+  &__section
+    padding-top: 80px
+    padding-bottom: 40px
+    background-image: url('../img/project-details-bg.png')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+
+    @media (max-width: 767px)
+      padding-top: 40px
+      padding-bottom: 20px
+
+  &__head
+    color: #000
+    max-width: 1025px
+    width: 100%
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+
+    @media (max-width: 767px)
+      margin-bottom: 25px
+
+  &__title
+    font-size: 35px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 20px
+
+    @media (max-width: 767px)
+      font-size: 22px
+      margin-bottom: 15px
+
+  &__desc
+    font-size: 22px
+    font-weight: 400
+    line-height: 1.3
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+    @media (max-width: 767px)
+      font-size: 18px
+
+  &__schema
+    position: relative
+
+    @media (max-width: 1279px)
+      width: 330px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 30px
+
+    @media (max-width: 359px)
+      right: 30px
+
+  &__img
+    position: relative
+    z-index: 1
+    text-align: center
+
+    img
+      vertical-align: top
+
+  &__points
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 3
+    width: 100%
+    height: 100%
+
+    & ^[0]
+      &__text
+        @media (min-width: 1280px)
+          width: 420px
+          padding: 30px 40px
+          background-color: #fff
+          border-radius: 30px
+          z-index: 5
+          position: absolute
+          opacity: 0
+          visibility: hidden
+          transition: opacity 0.3s, ease 0.3s
+
+          &._is-active-show
+            opacity: 1
+            visibility: visible
+
+          &:after
+            content: ''
+            position: absolute
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 15px 16.5px 0 16.5px
+            border-color: #fff transparent transparent transparent
+
+        @media (max-width: 1279px)
+          display: none
+
+    .t1
+      top: 125px
+      right: 147px
+
+    .t2
+      top: 70px
+      left: 163px
+
+    .t3
+      top: 80px
+      right: 317px
+
+    .t4
+      bottom: 290px
+      left: 283px
+
+    .t5
+      top: 140px
+      right: 273px
+
+  &__point
+    width: 46px
+    height: 46px
+    position: absolute
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23' cy='23' r='23' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='23' cy='23' r='17' fill='%23FFA723' stroke='white' stroke-width='4'/%3E%3Cpath d='M23.8554 22.1846H29V23.8398H23.8554V29H22.1446V23.8398H17V22.1846H22.1446V17H23.8554V22.1846Z' fill='white'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 0 0
+    cursor: pointer
+    transition: background-image 0.3s, ease 0.3s
+
+    @media (max-width: 1279px)
+      width: 25px
+      height: 25px
+
+    &._is-active
+      background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23' cy='23' r='23' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='23' cy='23' r='17' fill='%2372C30B' stroke='white' stroke-width='4'/%3E%3Cpath d='M23.8554 22.1846H29V23.8398H23.8554V29H22.1446V23.8398H17V22.1846H22.1446V17H23.8554V22.1846Z' fill='white'/%3E%3C/svg%3E%0A")
+
+    &:hover
+      background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='23' cy='23' r='23' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='23' cy='23' r='17' fill='%2372C30B' stroke='white' stroke-width='4'/%3E%3Cpath d='M23.8554 22.1846H29V23.8398H23.8554V29H22.1446V23.8398H17V22.1846H22.1446V17H23.8554V22.1846Z' fill='white'/%3E%3C/svg%3E%0A")
+
+    &.p1
+      top: 350px
+      right: 335px
+
+      @media (max-width: 1279px)
+        top: 85px
+        right: 80px
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%23FFA723' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.9144 18V10.32L13.7544 11.16H11.2344V9.6H14.8584V18H12.9144Z' fill='white'/%3E%3C/svg%3E%0A")
+
+      &._is-active  
+        @media (max-width: 1279px)
+          background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%2372C30B' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.9144 18V10.32L13.7544 11.16H11.2344V9.6H14.8584V18H12.9144Z' fill='white'/%3E%3C/svg%3E%0A")
+        
+    &.p2
+      top: 240px
+      left: 350px
+
+      @media (max-width: 1279px)
+        top: 80px
+        left: 90px
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%23FFA723' stroke='white' stroke-width='2'/%3E%3Cpath d='M9.85694 18V16.74L13.0969 13.68C13.3529 13.448 13.5409 13.24 13.6609 13.056C13.7809 12.872 13.8609 12.704 13.9009 12.552C13.9489 12.4 13.9729 12.26 13.9729 12.132C13.9729 11.796 13.8569 11.54 13.6249 11.364C13.4009 11.18 13.0689 11.088 12.6289 11.088C12.2769 11.088 11.9489 11.156 11.6449 11.292C11.3489 11.428 11.0969 11.64 10.8889 11.928L9.47294 11.016C9.79294 10.536 10.2409 10.156 10.8169 9.876C11.3929 9.596 12.0569 9.456 12.8089 9.456C13.4329 9.456 13.9769 9.56 14.4409 9.768C14.9129 9.968 15.2769 10.252 15.5329 10.62C15.7969 10.988 15.9289 11.428 15.9289 11.94C15.9289 12.212 15.8929 12.484 15.8209 12.756C15.7569 13.02 15.6209 13.3 15.4129 13.596C15.2129 13.892 14.9169 14.224 14.5249 14.592L11.8369 17.124L11.4649 16.416H16.2049V18H9.85694Z' fill='white'/%3E%3C/svg%3E%0A")
+
+      &._is-active  
+        @media (max-width: 1279px)  
+          background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%2372C30B' stroke='white' stroke-width='2'/%3E%3Cpath d='M9.85694 18V16.74L13.0969 13.68C13.3529 13.448 13.5409 13.24 13.6609 13.056C13.7809 12.872 13.8609 12.704 13.9009 12.552C13.9489 12.4 13.9729 12.26 13.9729 12.132C13.9729 11.796 13.8569 11.54 13.6249 11.364C13.4009 11.18 13.0689 11.088 12.6289 11.088C12.2769 11.088 11.9489 11.156 11.6449 11.292C11.3489 11.428 11.0969 11.64 10.8889 11.928L9.47294 11.016C9.79294 10.536 10.2409 10.156 10.8169 9.876C11.3929 9.596 12.0569 9.456 12.8089 9.456C13.4329 9.456 13.9769 9.56 14.4409 9.768C14.9129 9.968 15.2769 10.252 15.5329 10.62C15.7969 10.988 15.9289 11.428 15.9289 11.94C15.9289 12.212 15.8929 12.484 15.8209 12.756C15.7569 13.02 15.6209 13.3 15.4129 13.596C15.2129 13.892 14.9169 14.224 14.5249 14.592L11.8369 17.124L11.4649 16.416H16.2049V18H9.85694Z' fill='white'/%3E%3C/svg%3E%0A")
+    &.p4
+      bottom: 225px
+      left: 470px
+
+      @media (max-width: 1279px)
+        bottom: 70px
+        left: 130px
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%23FFA723' stroke='white' stroke-width='2'/%3E%3Cpath d='M9.73528 16.236V14.928L13.6953 9.6H15.7353L11.8593 14.928L10.9113 14.652H17.5233V16.236H9.73528ZM14.2593 18V16.236L14.3193 14.652V13.08H16.1553V18H14.2593Z' fill='white'/%3E%3C/svg%3E%0A")
+      &._is-active  
+        @media (max-width: 1279px)
+          background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%2372C30B' stroke='white' stroke-width='2'/%3E%3Cpath d='M9.73528 16.236V14.928L13.6953 9.6H15.7353L11.8593 14.928L10.9113 14.652H17.5233V16.236H9.73528ZM14.2593 18V16.236L14.3193 14.652V13.08H16.1553V18H14.2593Z' fill='white'/%3E%3C/svg%3E%0A")
+    &.p3
+      top: 240px
+      right: 505px
+
+      @media (max-width: 1279px)
+        top: 60px
+        right: 130px
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%23FFA723' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.6412 18.144C12.0572 18.144 11.4772 18.068 10.9012 17.916C10.3252 17.756 9.83722 17.532 9.43722 17.244L10.1932 15.756C10.5132 15.988 10.8852 16.172 11.3092 16.308C11.7332 16.444 12.1612 16.512 12.5932 16.512C13.0812 16.512 13.4652 16.416 13.7452 16.224C14.0252 16.032 14.1652 15.768 14.1652 15.432C14.1652 15.112 14.0412 14.86 13.7932 14.676C13.5452 14.492 13.1452 14.4 12.5932 14.4H11.7052V13.116L14.0452 10.464L14.2612 11.16H9.85722V9.6H15.7372V10.86L13.4092 13.512L12.4252 12.948H12.9892C14.0212 12.948 14.8012 13.18 15.3292 13.644C15.8572 14.108 16.1212 14.704 16.1212 15.432C16.1212 15.904 15.9972 16.348 15.7492 16.764C15.5012 17.172 15.1212 17.504 14.6092 17.76C14.0972 18.016 13.4412 18.144 12.6412 18.144Z' fill='white'/%3E%3C/svg%3E%0A")
+      &._is-active  
+        @media (max-width: 1279px)
+          background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%2372C30B' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.6412 18.144C12.0572 18.144 11.4772 18.068 10.9012 17.916C10.3252 17.756 9.83722 17.532 9.43722 17.244L10.1932 15.756C10.5132 15.988 10.8852 16.172 11.3092 16.308C11.7332 16.444 12.1612 16.512 12.5932 16.512C13.0812 16.512 13.4652 16.416 13.7452 16.224C14.0252 16.032 14.1652 15.768 14.1652 15.432C14.1652 15.112 14.0412 14.86 13.7932 14.676C13.5452 14.492 13.1452 14.4 12.5932 14.4H11.7052V13.116L14.0452 10.464L14.2612 11.16H9.85722V9.6H15.7372V10.86L13.4092 13.512L12.4252 12.948H12.9892C14.0212 12.948 14.8012 13.18 15.3292 13.644C15.8572 14.108 16.1212 14.704 16.1212 15.432C16.1212 15.904 15.9972 16.348 15.7492 16.764C15.5012 17.172 15.1212 17.504 14.6092 17.76C14.0972 18.016 13.4412 18.144 12.6412 18.144Z' fill='white'/%3E%3C/svg%3E%0A")
+    &.p5
+      top: 310px
+      right: 460px
+
+      @media (max-width: 1279px)
+        top: 90px
+        right: 120px
+        background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%23FFA723' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.7556 18.144C12.1716 18.144 11.5916 18.068 11.0156 17.916C10.4476 17.756 9.95964 17.532 9.55164 17.244L10.3196 15.756C10.6396 15.988 11.0076 16.172 11.4236 16.308C11.8476 16.444 12.2756 16.512 12.7076 16.512C13.1956 16.512 13.5796 16.416 13.8596 16.224C14.1396 16.032 14.2796 15.764 14.2796 15.42C14.2796 15.204 14.2236 15.012 14.1116 14.844C13.9996 14.676 13.7996 14.548 13.5116 14.46C13.2316 14.372 12.8356 14.328 12.3236 14.328H10.1756L10.6076 9.6H15.7316V11.16H11.3036L12.3116 10.272L12.0116 13.644L11.0036 12.756H12.7796C13.6116 12.756 14.2796 12.872 14.7836 13.104C15.2956 13.328 15.6676 13.636 15.8996 14.028C16.1316 14.42 16.2476 14.864 16.2476 15.36C16.2476 15.856 16.1236 16.316 15.8756 16.74C15.6276 17.156 15.2436 17.496 14.7236 17.76C14.2116 18.016 13.5556 18.144 12.7556 18.144Z' fill='white'/%3E%3C/svg%3E%0A")
+        
+      &._is-active  
+        @media (max-width: 1279px)
+          background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='white' fill-opacity='0.28'/%3E%3Ccircle cx='13.5' cy='13.5' r='10.5' fill='%2372C30B' stroke='white' stroke-width='2'/%3E%3Cpath d='M12.7556 18.144C12.1716 18.144 11.5916 18.068 11.0156 17.916C10.4476 17.756 9.95964 17.532 9.55164 17.244L10.3196 15.756C10.6396 15.988 11.0076 16.172 11.4236 16.308C11.8476 16.444 12.2756 16.512 12.7076 16.512C13.1956 16.512 13.5796 16.416 13.8596 16.224C14.1396 16.032 14.2796 15.764 14.2796 15.42C14.2796 15.204 14.2236 15.012 14.1116 14.844C13.9996 14.676 13.7996 14.548 13.5116 14.46C13.2316 14.372 12.8356 14.328 12.3236 14.328H10.1756L10.6076 9.6H15.7316V11.16H11.3036L12.3116 10.272L12.0116 13.644L11.0036 12.756H12.7796C13.6116 12.756 14.2796 12.872 14.7836 13.104C15.2956 13.328 15.6676 13.636 15.8996 14.028C16.1316 14.42 16.2476 14.864 16.2476 15.36C16.2476 15.856 16.1236 16.316 15.8756 16.74C15.6276 17.156 15.2436 17.496 14.7236 17.76C14.2116 18.016 13.5556 18.144 12.7556 18.144Z' fill='white'/%3E%3C/svg%3E%0A")
+  &__container
+    @media (min-width: 1280px)
+      display: none
+
+    .swiper-wrapper
+      @media (max-width: 1279px)
+        padding-bottom: 65px
+
+    .swiper-pagination
+      @media (min-width: 1280px)
+        display: none !important
+
+  &__item
+    width: 420px
+    z-index: 5
+    height: auto
+
+  &__body
+    padding: 20px
+    background-color: #fff
+    border-radius: 30px
+
+  &__name
+    font-size: 16px
+    color: #000
+    font-weight: 700
+    line-height: 1.3
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+
+  &__number
+    font-size: 14px
+    color: #FFF
+    font-weight: 700
+    line-height: 1.1
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #72C30B
+    flex: 0 0 40px
+    width: 40px
+    max-width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-right: 20px
+
+  &__text
+    font-size: 22px
+    color: #000
+    font-weight: 700
+    line-height: 1.3
+    text-align: center
+
+    @media (max-width: 1279px)
+      font-weight: 400
+      font-size: 16px
+      text-align: left
