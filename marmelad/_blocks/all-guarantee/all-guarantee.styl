@@ -1,0 +1,165 @@
+.all-guarantee
+  padding-top: 40px
+  padding-bottom: 40px
+
+  @media (max-width: 767px)
+    padding-top: 25px
+    padding-bottom: 25px
+
+  &__head
+    color: #000
+    max-width: 1140px
+    width: 100%
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+
+    @media (max-width: 767px)
+      margin-bottom: 25px
+
+  &__title
+    font-size: 35px
+    font-weight: 700
+    line-height: 1.2
+
+    @media (max-width: 767px)
+      font-size: 22px
+
+  &__desc
+    font-size: 35px
+    font-weight: 400
+    line-height: 1.3
+    margin-bottom: 20px
+
+    @media (max-width: 767px)
+      font-size: 22px
+
+  &__note
+    font-size: 22px
+    font-weight: 400
+    line-height: 1.3
+
+    @media (max-width: 767px)
+      font-size: 18px
+
+  &__cols
+    display: flex
+
+    @media (max-width: 1023px)
+      flex-direction: column
+
+  &__col
+    &--img
+      flex: 0 0 470px
+      width: 470px
+      max-width: 470px
+
+      @media (max-width: 1023px)
+        flex: none
+        width: 100%
+        max-width: 100%
+
+  &__item
+    margin-bottom: 30px
+
+    @media (max-width: 479px)
+      margin-bottom: 20px
+
+    &:nth-child(1)
+      & ^[0]
+        &__body
+          background-color: #fff
+          background-image: url('../img/all-guarantee-pic.png')
+          background-repeat: no-repeat
+          background-position: 0 0
+
+        &__text, &__name
+          color: #000
+
+    &:nth-child(2)
+      & ^[0]
+        &__body
+          background-color: #FFA723
+          background-image: url('../img/all-guarantee-pic2.png')
+          background-repeat: no-repeat
+          background-position: 0 0
+
+        &__text
+          strong
+            color: #fff
+
+    &:nth-child(3)
+      & ^[0]
+        &__body
+          background-color: #1F1F1F
+          background-image: url('../img/all-guarantee-pic3.png')
+          background-repeat: no-repeat
+          background-position: 0 0
+
+    &:last-child
+      margin-bottom: 0
+
+  &__body
+    padding: 35px 35px 35px 155px
+    border-radius: 30px
+    overflow: hidden
+
+    @media (max-width: 479px)
+      background-image: none !important
+      padding: 30px
+
+  &__name
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.2
+    color: #FFF
+    margin-bottom: 10px
+
+    @media (max-width: 479px)
+      font-size: 18px
+
+  &__text
+    font-size: 18px
+    color: #FFF
+    font-weight: 400
+    line-height: 1.3
+
+    @media (max-width: 479px)
+      font-size: 16px
+
+    strong
+      color: #ffa723
+
+  &__img
+    border-radius: 30px
+    margin-left: 30px
+    overflow: hidden
+    height: 100%
+
+    @media (max-width: 1023px)
+      margin-top: 30px
+      margin-left: 0
+      height: 450px
+
+    @media (max-width: 767px)
+      height: 325px
+
+    @media (max-width: 479px)
+      margin-top: 20px
+
+    @media (max-width: 359px)
+      height: 280px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: 50% 50%
+      vertical-align: top
+
+      @media (max-width: 1023px)
+        object-position: 50% 25%
+
+      @media (max-width: 479px)
+        object-position: 50% 50%
