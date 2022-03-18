@@ -254,9 +254,14 @@ img {
   z-index: 100000 /* Above WP toolbar. */;
 }
 .footer {
+  background-color: #fff;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+}
+.footer .site-info__button-whats-app,
+.footer .site-info__phone {
+  color: #000;
 }
 .header {
   -webkit-box-flex: 0;
