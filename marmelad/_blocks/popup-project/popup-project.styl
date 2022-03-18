@@ -1,0 +1,196 @@
+.popup-project
+  max-width: 1050px
+  width: 100%
+  padding: 30px 40px 40px 40px
+  background-color: #fff
+  background-image: url('../img/popup-project-pic.png')
+  background-repeat: no-repeat
+  background-position: 0 0
+  border-radius: 30px
+  text-align: left
+
+  @media (max-width: 1279px)
+    padding-right: 20px
+    padding-left: 20px
+
+  @media (max-width: 959px)
+    max-width: 550px
+
+  @media (max-width: 479px)
+    padding-top: 115px
+
+  &__button-close
+    top: 20px
+    right: 20px
+
+    &:before
+      content: ''
+      width: 40px
+      height: 40px
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='19.5' stroke='%23DBDBDB'/%3E%3Cpath d='M13.2925 13.3053C13.4799 13.1178 13.734 13.0125 13.9989 13.0125C14.2639 13.0125 14.5179 13.1178 14.7053 13.3053L19.9938 18.5983L25.2822 13.3053C25.3744 13.2098 25.4846 13.1336 25.6065 13.0812C25.7284 13.0288 25.8595 13.0012 25.9922 13C26.1248 12.9989 26.2564 13.0242 26.3792 13.0745C26.502 13.1247 26.6135 13.199 26.7074 13.2929C26.8012 13.3868 26.8754 13.4984 26.9256 13.6213C26.9758 13.7442 27.0011 13.8759 27 14.0087C26.9988 14.1415 26.9712 14.2727 26.9189 14.3947C26.8665 14.5167 26.7904 14.627 26.695 14.7193L21.4065 20.0123L26.695 25.3053C26.877 25.4939 26.9777 25.7465 26.9754 26.0087C26.9731 26.2709 26.8681 26.5217 26.6828 26.7071C26.4976 26.8925 26.247 26.9977 25.985 27C25.723 27.0022 25.4706 26.9014 25.2822 26.7193L19.9938 21.4263L14.7053 26.7193C14.5169 26.9014 14.2645 27.0022 14.0025 27C13.7405 26.9977 13.49 26.8925 13.3047 26.7071C13.1195 26.5217 13.0144 26.2709 13.0121 26.0087C13.0098 25.7465 13.1105 25.4939 13.2925 25.3053L18.581 20.0123L13.2925 14.7193C13.1052 14.5318 13 14.2775 13 14.0123C13 13.7471 13.1052 13.4928 13.2925 13.3053Z' fill='black'/%3E%3C/svg%3E%0A")
+
+  &__head
+    text-align: center
+    margin-bottom: 35px
+
+  &__logo
+    max-width: 95px
+    margin-left: auto
+    margin-right: auto
+
+  &__cols
+    display: flex
+
+    @media (max-width: 959px)
+      flex-direction: column
+
+  &__col
+    &--slider
+      flex: 0 0 500px
+      width: 500px
+      max-width: 500px
+      margin-right: 40px
+
+      @media (max-width: 959px)
+        flex: none
+        width: 100%
+        max-width: 500px
+        margin-top: 30px
+        margin-left: auto
+        margin-right: auto
+        order: 1
+
+  &__container
+    margin-bottom: 30px
+
+    @media (max-width: 639px)
+      margin-bottom: 20px
+
+  &__item
+    height: 400px
+
+    @media (max-width: 639px)
+      height: auto
+
+  &__img
+    img
+      width: 100%
+      height: 100%
+      vertical-align: top
+      object-fit: cover
+
+  &__container
+    border-radius: 30px
+
+    .swiper-button-prev
+      width: 17px
+      left: 20px
+
+      &:after
+        content: ''
+        width: 17px
+        height: 27px
+        background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='white'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+        background-size: cover
+
+    .swiper-button-next
+      width: 17px
+      right: 20px
+
+      &:after
+        content: ''
+        transform: rotate(-180deg)
+        width: 17px
+        height: 27px
+        background-image: url("data:image/svg+xml,%3Csvg width='17' height='27' viewBox='0 0 17 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.1207 4.95092C17.2931 3.81992 17.2931 1.97926 16.1207 0.848253C14.9483 -0.282754 13.0402 -0.282754 11.8678 0.848253L0.87931 11.4487C-0.293104 12.5797 -0.293104 14.4203 0.87931 15.5513L11.8678 26.1517C13.0402 27.2828 14.9483 27.2828 16.1207 26.1517C17.2931 25.0207 17.2931 23.1801 16.1207 22.0491L7.25862 13.5L16.1207 4.95092Z' fill='white'/%3E%3C/svg%3E%0A")
+        background-repeat: no-repeat
+
+  &__item-thumb
+    border: 1px solid #D5D5D5
+    border-radius: 30px
+    overflow: hidden
+    height: 150px
+
+    @media (max-width: 639px)
+      height: auto
+
+    &.swiper-slide-thumb-active
+      border: 4px solid #72C30B !important
+
+  &__img-thumb
+    height: 100%
+
+    img
+      width: 100%
+      height: 100%
+      vertical-align: top
+      object-fit: cover
+
+  &__content
+    font-size: 18px
+    color: #000
+    font-weight: 400
+    line-height: 1.3
+
+    @media (max-width: 639px)
+      font-size: 16px
+
+    @media (max-width: 359px)
+      font-size: 14px
+
+    ul
+      list-style: none
+      margin: 0
+      padding-left: 0
+
+      li
+        margin-bottom: 7px
+
+        @media (max-width: 639px)
+          margin-bottom: 5px
+
+    span
+      font-weight: 700
+      color: #ffa723
+
+  &__info
+    margin-bottom: 25px
+
+    @media (max-width: 639px)
+      margin-bottom: 20px
+
+  &__title
+    font-size: 25px
+    font-weight: 700
+    line-height: 1.1
+    margin-bottom: 30px
+
+    @media (max-width: 639px)
+      font-size: 20px
+      margin-bottom: 20px
+
+  &__name
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.1
+    margin-bottom: 20px
+
+    @media (max-width: 639px)
+      font-size: 18px
+      margin-bottom: 10px
+
+  &__bottom
+    margin-top: 30px
+    display: flex
+    flex-direction: column
+
+    @media (max-width: 639px)
+      margin-top: 20px
+
+  &__note
+    font-size: 18px
+    color: #000
+    font-weight: 400
+    line-height: 1.4
+    margin-bottom: 15px
