@@ -1,0 +1,179 @@
+.contact-form
+  padding-top: 50px
+
+  @media (max-width: 1023px)
+    padding-top: 25px
+
+  &__container
+    background-color: #FFF
+    border-radius: 30px
+    padding: 10px
+
+  &__form
+    width: 100%
+
+  &__form-section
+    width: 100%
+    border: 1px solid #E6E6E6
+    border-radius: 20px
+    background-image: url('../img/contacts-form-bg.png')
+    background-repeat: no-repeat
+    background-position: 100% 0
+    background-size: contain
+    overflow: hidden
+    padding: 60px 45px
+
+    @media (max-width: 1279px)
+      background-position-x: 250%
+
+    @media (max-width: 959px)
+      background-image: none
+      padding: 30px
+
+    @media (max-width: 479px)
+      padding-right: 10px
+      padding-left: 10px
+
+  &__form-inner
+    max-width: 455px
+    width: 100%
+
+    @media (max-width: 959px)
+      max-width: 100%
+
+  &__head
+    color: #000
+    text-align: center
+    margin-bottom: 30px
+
+    @media (max-width: 479px)
+      margin-bottom: 15px
+
+  &__title
+    font-size: 25px
+    font-weight: 700
+    line-height: 1.3
+    margin-bottom: 10px
+
+    @media (max-width: 767px)
+      font-size: 20px
+
+  &__desc
+    font-size: 22px
+    font-weight: 400
+    line-height: 1.2
+
+    @media (max-width: 767px)
+      font-size: 18px
+
+  &__field
+    margin-bottom: 20px
+
+    input
+      font-size: 18px
+      color: #868686
+      font-weight: 400
+      line-height: 1.1
+      height: 70px
+      border: 1px solid #CCCCCC
+      border-radius: 100px
+      padding: 20px 40px
+      width: 100%
+
+      @media (max-width: 479px)
+        padding-right: 20px
+        padding-left: 20px
+
+    ::placeholder
+      font-size: 18px
+      color: #868686
+      font-weight: 400
+      line-height: 1.1
+
+  &__name
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.2
+    margin-bottom: 20px
+    text-align: center
+
+    @media (max-width: 479px)
+      font-size: 16px
+      margin-bottom: 15px
+
+  &__button
+    width: 100%
+    padding-top: 15px
+    padding-bottom: 15px
+    margin-bottom: 20px
+
+    @media (max-width: 767px)
+      padding-top: 18px
+      padding-bottom: 18px
+
+    @media (max-width: 479px)
+      padding-right: 15px
+      padding-left: 15px
+
+    @media (max-width: 359px)
+      font-size: 14px
+      padding-top: 20px
+      padding-bottom: 20px
+      padding-right: 5px
+      padding-left: 5px
+
+    span
+      br
+        @media (max-width: 413px)
+          display: none
+
+  &__privacy-policy
+    display: flex
+    align-items: center
+    text-align: left
+    max-width: 355px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
+    input
+      display: none
+
+      &:checked ~ .checkbox-name:before
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.43192 8.53864C4.88786 9.08272 4.00508 9.08272 3.46128 8.53864L0.408044 5.48534C-0.136015 4.94153 -0.136015 4.05873 0.408044 3.51492C0.951839 2.97085 1.83462 2.97085 2.37868 3.51492L4.19781 5.33383C4.33513 5.4709 4.55806 5.4709 4.69565 5.33383L9.62132 0.408053C10.1651 -0.136018 11.0479 -0.136018 11.592 0.408053C11.8532 0.669322 12 1.02381 12 1.39326C12 1.76271 11.8532 2.1172 11.592 2.37847L5.43192 8.53864Z' fill='black'/%3E%3C/svg%3E%0A")
+
+    .checkbox-name
+      font-size: 14px
+      color: #dad8d8
+      font-weight: 400
+      line-height: 1.2
+      display: flex
+
+      &:before
+        content: ''
+        flex: 0 0 25px
+        width: 25px
+        max-width: 25px
+        height: 25px
+        background-color: #FFF
+        background-image: none
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 12px 9px
+        border: 1px solid #CCC
+        border-radius: 50%
+        overflow: hidden
+        margin-right: 20px
+        transition: background-image 0.3s, ease 0.3s
+
+        @media (max-width: 479px)
+          margin-right: 10px
+
+    span
+      a
+        color: #dad8d8
+        font-weight: 700
+        text-decoration: none
+
+        &:hover
+          text-decoration: underline
