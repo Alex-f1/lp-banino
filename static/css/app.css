@@ -1739,6 +1739,38 @@ strong {
   background-position: 0 0;
   margin-left: 25px;
 }
+.quality-certificates__head {
+  color: #000;
+  max-width: 1050px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.quality-certificates__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.quality-certificates__container .swiper-wrapper {
+  padding-bottom: 65px;
+}
+.quality-certificates__item {
+  text-align: center;
+}
+.quality-certificates__img {
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.quality-certificates__img img {
+  vertical-align: top;
+}
 .reviews-clients__inner {
   max-width: 1305px;
   margin-left: auto;
@@ -2879,6 +2911,12 @@ strong {
   .project-preview {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .quality-certificates__head {
+    margin-bottom: 25px;
+  }
+  .quality-certificates__title {
+    font-size: 22px;
   }
   .reviews-clients__container {
     max-width: 100%;
