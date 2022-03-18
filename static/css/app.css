@@ -411,6 +411,121 @@ strong {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ff9f2e;
 }
+.advantages-product {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.advantages-product__head {
+  color: #000;
+  max-width: 780px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.advantages-product__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.advantages-product__desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-product__item {
+  width: 34.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+.advantages-product__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.6);
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages-product__content {
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 30px 20px 190px 20px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages-product__content:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55.31%, #fff), color-stop(90.88%, rgba(255,255,255,0)));
+  background-image: linear-gradient(180deg, #fff 55.31%, rgba(255,255,255,0) 90.88%);
+  z-index: 4;
+}
+.advantages-product__icon {
+  width: 50px;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+.advantages-product__icon img {
+  vertical-align: top;
+}
+.advantages-product__name {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 5;
+}
+.advantages-product__text {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  z-index: 5;
+}
+.advantages-product__img {
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+  margin-top: -225px;
+  position: relative;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+.advantages-product__img img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .advantages {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -2460,6 +2575,15 @@ strong {
   }
 }
 @media (min-width: 960px) {
+  .advantages-product__container .swiper-pagination {
+    display: none !important;
+  }
+  .advantages-product__items {
+    margin-left: -30px;
+  }
+  .advantages-product__item {
+    padding-left: 30px;
+  }
   .advantages__container .swiper-pagination {
     display: none !important;
   }
@@ -2714,6 +2838,9 @@ strong {
   }
 }
 @media (max-width: 959px) {
+  .advantages-product__container .swiper-wrapper {
+    padding-bottom: 65px;
+  }
   .advantages__container .swiper-wrapper {
     padding-bottom: 65px;
   }
@@ -2792,6 +2919,27 @@ strong {
   }
   .button-general {
     font-size: 16px;
+  }
+  .advantages-product {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .advantages-product__head {
+    margin-bottom: 25px;
+  }
+  .advantages-product__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .advantages-product__desc {
+    font-size: 18px;
+  }
+  .advantages-product__name {
+    font-size: 18px;
+  }
+  .advantages-product__text {
+    font-size: 16px;
+    line-height: 1.4;
   }
   .advantages {
     padding-top: 25px;
@@ -3196,6 +3344,9 @@ strong {
   }
 }
 @media (max-width: 359px) {
+  .advantages-product__content:after {
+    top: 50px;
+  }
   .advantages__content:after {
     top: 50px;
   }
